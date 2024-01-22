@@ -9,12 +9,12 @@ class Storage {
         return this.#items;
     }
 
-    addItem(items) {
-        this.#items.push(items);
+    addItem(newItem) {
+        this.#items.push(newItem);
     }
 
-    removeItem(items) {
-        this.#items = this.#items.filter(item => item !== items);
+    removeItem(newItem) {
+        this.#items = this.#items.filter(item => item !== newItem);
     }
 }
 
